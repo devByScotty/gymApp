@@ -1,20 +1,25 @@
 {
-  "name": "fitclub",
+  "name": "gym-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "emailjs": "^4.0.0",
-    "framer-motion": "^6.3.15",
-    "number-counter": "^1.0.3",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-onclickoutside": "^6.12.2",
-    "react-scripts": "^4.0.3",
-    "react-scroll": "^1.8.7",
+    "react-loader-spinner": "^5.3.4",
+    "react-router-dom": "6",
+    "react-scripts": "5.0.1",
+    "remixicon": "^2.5.0",
+    "router-dom": "^2.2.11",
+    "styled-components": "^6.0.0-rc.3",
+    "useparams": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,9 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.25"
   }
 }

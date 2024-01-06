@@ -1,0 +1,79 @@
+nav {
+
+    width:100vw;
+    height: 6rem;
+    display: grid;
+    place-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+    background: var(--white);
+    box-shadow: -20px 10px 53px -45px rgba(204,204,255,0.42);
+    border-bottom: 1px solid rgba(204,204,255,0.42);
+   
+     
+}
+
+
+.nav_container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 3px;
+
+}
+ 
+nav button {
+
+    display: none;
+
+}
+
+
+.nav_items {
+
+    display: flex;
+    gap: 3rem; 
+
+}
+
+.nav_items li a {
+
+    display: inline-block;
+    padding: 0.2rem 0.2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.3s;
+    color: var(--dark);
+
+
+
+}
+.nav__logo{
+
+    position: relative;
+    padding-right:  4rem;
+    color: var(--color-primary);
+
+}
+
+
+.nav__signin-signup {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    z-index: 2;
+    text-transform: uppercase;
+
+}
+
+.nav__logo  > h3 {
+
+    font-size: 1.7rem;
+
+
+}
