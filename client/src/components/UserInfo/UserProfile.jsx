@@ -14,7 +14,7 @@ const UserProfile = ({ userId }) => {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const response = await axios.get(`http://localhost:5002/api/users/${userId}`);
+                const response = await axios.get(`https://gymapp-wxel.onrender.com/api/users/${userId}`);
                 setUserData(response.data);
             } catch (error) {
                 console.error('Error fetching user data:', error);
@@ -32,7 +32,7 @@ const UserProfile = ({ userId }) => {
     useEffect(() => {
         const fetchProgressData = async () => {
             try {
-                const response = await axios.get(`http://localhost:5002/api/plans/${userId}`);
+                const response = await axios.get(`https://gymapp-wxel.onrender.com/api/plans/${userId}`);
                 setProgressData(response.data);
                 console.log(response.data);
             } catch (error) {
