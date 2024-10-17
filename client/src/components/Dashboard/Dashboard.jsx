@@ -57,7 +57,7 @@ const Dashboard = () => {
     };
 
     try {
-      await axios.post('http://localhost:5002/api/workouts/saveWorkout', workoutSession);
+      await axios.post('https://gymapp-wxel.onrender.com/api/workouts/saveWorkout', workoutSession);
       alert('Workout session saved successfully!');
     } catch (error) {
       console.error('Error saving workout session:', error);
@@ -73,7 +73,7 @@ const Dashboard = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5002/api/plans/saveWorkoutPlan', workoutPlan);
+      const response = await axios.post('https://gymapp-wxel.onrender.com/api/plans/saveWorkoutPlan', workoutPlan);
       alert('Workout plan saved successfully!');
       setWorkoutId(response.data.workoutId);
       localStorage.setItem('workoutId', response.data.workoutId); // Store the workout ID in localStorage
@@ -85,7 +85,7 @@ const Dashboard = () => {
 
   const fetchSavedWorkouts = async () => {
     try {
-      const response = await axios.get(`http://localhost:5002/api/plans/${userId}`);
+      const response = await axios.get(`https://gymapp-wxel.onrender.com/api/plans/${userId}`);
       setSavedWorkouts(response.data);
     } catch (error) {
       console.error('Error fetching saved workouts:', error);
