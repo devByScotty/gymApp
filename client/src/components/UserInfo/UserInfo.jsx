@@ -10,7 +10,7 @@ const UserInfo = ({ userId }) => {
   useEffect(() => {
     const fetchWorkoutStats = async () => {
       try {
-        const response = await axios.get(`http://localhost:5002/api/workouts/user/${user.id}/stats`);
+        const response = await axios.get(`https://gymapp-wxel.onrender.com/api/workouts/user/${user.id}/stats`);
         setWorkoutStats(response.data);
       } catch (error) {
         console.error('Error fetching workout stats:', error);
