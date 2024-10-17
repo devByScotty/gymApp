@@ -19,7 +19,7 @@ const SignUpForm = () => {
     setSuccess(''); // Clear previous success messages
 
     try {
-      const response = await axios.post('http://localhost:5002/api/users/signup', formData);
+      const response = await axios.post('https://gymapp-wxel.onrender.com/api/users/signup', formData);
 
       if (response.status === 201) {
         setSuccess('Registration successful!'); // Show success message
