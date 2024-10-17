@@ -15,7 +15,7 @@ const SignInForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5002/api/users/login', { email, password });
+      const response = await axios.post('https://gymapp-wxel.onrender.com/api/users/login', { email, password });
       console.log('Login successful:', response.data);
 
       setSuccess('Login successful! Welcome, ' + response.data.user.name);
