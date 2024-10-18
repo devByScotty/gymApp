@@ -9,6 +9,8 @@ User Profiles: Manage user profiles with personal information, workout history, 
 Material-UI Components: Beautiful and responsive UI design using Material-UI components.
 Saved Workouts: Users can save their workout plans and view them in their profile.
 Workout Recommendations: Tailored workout suggestions based on user preferences and fitness goals.
+
+
 Tech Stack
 Frontend: React.js, Material-UI
 Backend: Node.js, Express.js (for APIs)
@@ -17,4 +19,4 @@ API Integration: RapidAPI (for fetching exercise data)
 Authentication: JSON Web Tokens (JWT) for user authentication
 State Management: React hooks for managing local state
 Screenshots
-(Add some screenshots of your app here to show what it looks like)
+
